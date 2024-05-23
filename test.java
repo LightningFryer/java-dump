@@ -8,6 +8,7 @@ public class test {
 
     public static void main(String[] args) {
         int i;
+        
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("Enter array limit: ");

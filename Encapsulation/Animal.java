@@ -1,6 +1,6 @@
 package Encapsulation;
 
-// This is an abstract class and hence we can just create an instance of this in the main code
+// This is an abstract class and hence we cannot just create an instance of this in the main code
 public abstract class Animal {
     // These variables are private and hence can never be accessed in the main code so we need to use getters and setters to manipulate these
     private String name;

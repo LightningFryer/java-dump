@@ -1,31 +1,19 @@
-/**
- * test
- */
-
 import java.util.Scanner;
 
-public class test {
+public class test{
+    public static void main(String[] args){
+        int i, fac=1, num;
 
-    public static void main(String[] args) {
-        int i;
-        
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Enter array limit: ");
-        int n = scanner.nextInt();
+        System.out.println("Enter number to find factorial of: ");
+        num = scanner.nextInt();
 
-        int[] arr = new int[n]; // Declaring the array
-
-        for (i=0; i<n; i++){
-            System.out.print("Enter array element: ");
-            arr[i] = scanner.nextInt();
+        for (i=1; i<=num; i++){
+            fac = fac*i;
         }
 
-        System.out.print("\nArray: ");
-
-        for (i=0; i<n; i++){
-            System.out.print(arr[i] + " ");
-        }
+        System.out.println("The factorial of " + num + " is " + fac);
 
         scanner.close();
     }

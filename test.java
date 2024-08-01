@@ -1,20 +1,19 @@
-import java.util.Scanner;
+class Box{
+    int width;
+    int height;
+    int depth;
+    
+    void setDimensions(int width, int height, int depth){
+        width = width;
+        height = height;
+        depth = depth;
+    }
+}
 
-public class test{
-    public static void main(String[] args){
-        int i, fac=1, num;
-
-        Scanner scanner = new Scanner(System.in);
-
-        System.out.println("Enter number to find factorial of: ");
-        num = scanner.nextInt();
-
-        for (i=1; i<=num; i++){
-            fac = fac*i;
-        }
-
-        System.out.println("The factorial of " + num + " is " + fac);
-
-        scanner.close();
+class test {
+    public static void main(String[] args) {
+        Box bux = new Box();
+        bux.setDimensions(1, 2, 3);
+        System.out.println(bux.width);
     }
 }

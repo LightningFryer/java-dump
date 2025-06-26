@@ -1,8 +1,16 @@
 package lab_1;
-import java.util.Scanner;
+import java.util.*;
+
+class another{
+    Scanner max_sc = new Scanner(System.in);
+    
+    protected void finalize(){
+        max_sc.close();
+    }
+
+}
 
 public class findMax {
-
     public static int maxThroughIfElse(int x, int y, int z){
         if (x > y){
             if (x > z){
